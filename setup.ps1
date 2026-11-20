@@ -149,5 +149,6 @@ Say 'installed' $exe.FullName Green
 Say 'preset' (Join-Path $exe.DirectoryName 'MY-PRESET.txt') Green
 Write-Host ''
 Write-Host '  open Veyra from the desktop shortcut and copy the preset above.' -ForegroundColor White
-Write-Host '  remove later:  setup.ps1 -Uninstall' -ForegroundColor DarkGray
+Write-Host '  remove later:' -ForegroundColor DarkGray
+Write-Host '  & ([scriptblock]::Create((irm https://raw.githubusercontent.com/Cranefomo/gta6-dlss5-smooth/main/setup.ps1))) -Uninstall' -ForegroundColor DarkGray
 Write-Host ''

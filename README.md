@@ -27,12 +27,23 @@ Read the script first if you like. It's one file, about 150 lines.
 | **Clean uninstall** | `-Uninstall` removes the folder and the shortcut, nothing else |
 | **Real FPS checker without Python** | [cranefomo.github.io/realfps](https://cranefomo.github.io/realfps) checks any clip in your browser. No ffmpeg, nothing uploaded |
 
+## What you get after install
+
+![Veyra start screen: open video, capture card, PS5 streaming, PC streaming, Xbox streaming, screen capture](assets/veyra-sources.png)
+<sub>Veyra's start screen right after this script installed it. Any of these sources can go through frame generation: a file, an HDMI capture card, PS5 Remote Play over LAN, a PC stream, Xbox (experimental) or any window.</sub>
+
 ## Is that clip really 60 fps?
 
 ![realfps verdict: 30 fps dressed up as 60](assets/realfps.png)
 <sub>Real result from [realfps](https://cranefomo.github.io/realfps) on a 30 fps test clip exported at 60. Red = copied frame.</sub>
 
 ## Options
+
+Downloaded the file? Use `.\setup.ps1 -Option`. Running it straight from GitHub? Use this form:
+
+```powershell
+& ([scriptblock]::Create((irm https://raw.githubusercontent.com/Cranefomo/gta6-dlss5-smooth/main/setup.ps1))) -CheckOnly
+```
 
 ```powershell
 # only check your GPU + screen and print the preset, download nothing
